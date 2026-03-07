@@ -8,6 +8,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes - Common/Main Menu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes - Common/Map.unity
+    guid: 78bf8de491d31364ca902f2e8836b50f
+  - enabled: 1
+    path: Assets/Scenes - Common/SleepyDragon.unity
+    guid: ee3ddf9fe0135d9469e6938ae7ee3210
+  - enabled: 1
+    path: Assets/Scenes - Common/Blacksmith.unity
+    guid: 71a710a1a3fcc924d9543f2eff6254eb
+  - enabled: 1
+    path: Assets/Scenes - Common/Fishing.unity
+    guid: 76183467d5e117646afe8dbaf10b6278
+  - enabled: 1
+    path: Assets/Scenes - Common/BossFight.unity
+    guid: 1b53790648945ac43a26d63b90765ae7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
