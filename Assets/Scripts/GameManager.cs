@@ -1,16 +1,34 @@
 using UnityEngine;
 
-public class Gamemanager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    // The static reference to the single instance
+    public static GameManager Instance { get; private set; }
+
+    private void Awake()
     {
-        
+        if (Instance != null && Instance != this)
+        {
+            // If another instance already exists, destroy this duplicate
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            // Otherwise, set the instance to this object
+            Instance = this;
+            // Optional: Keep the object alive across scene loads
+            // DontDestroyOnLoad(this.gameObject); 
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void IDidThing()
     {
-        
+        Debug.Log("Accessed manager");
+    }
+
+    // Example method that can be accessed globally
+    public void PlayerDied()
+    {
+        Debug.Log("Player died. Game Over!");
     }
 }

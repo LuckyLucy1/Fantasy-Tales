@@ -5,6 +5,12 @@ using UnityEditor;
 public class MenuManager : MonoBehaviour
 {
 
+    private void Start()
+    {
+        GameManager.Instance.IDidThing();
+    }
+
+
     public void Play()
     {
         Debug.Log("Play");
@@ -18,16 +24,12 @@ public class MenuManager : MonoBehaviour
     public void Quit()
     {
         Debug.Log("Quit");
-                // This block is only compiled when the game is run in the Unity Editor
-            #if UNITY_EDITOR
-            // Stop playing the scene within the Editor
-            EditorApplication.isPlaying = false;
-            #else
-            // This block is only compiled in a standalone build
-            Application.Quit();
-            #endif
+        #if UNITY_EDITOR
+        // Stop playing the scene within the Editor
+        EditorApplication.isPlaying = false;
+        #else
+        // This block is only compiled in a standalone build
+        Application.Quit();
+        #endif
     }
-
-
-
 }
