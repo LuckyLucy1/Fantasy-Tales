@@ -150,8 +150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotPrefab: {fileID: 8934276958348552808, guid: 4f31bdee89d0a834f93e89387ddfb818, type: 3}
   numberOfDots: 5
-  spawnArea: {x: 8, y: 1}
-  sceneToLoad: 'Map '
+  spawnArea: {x: 7.5, y: 1}
+  sceneToLoad: Map
 --- !u!4 &33759692
 Transform:
   m_ObjectHideFlags: 0
@@ -674,6 +674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1315180273}
   - component: {fileID: 1315180272}
+  - component: {fileID: 1315180274}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Untagged
@@ -751,6 +752,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1315180274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315180270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f88558f1bc5d4348bd34c3561391696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1393257363
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,7 +949,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1881859918}
   - component: {fileID: 1881859917}
-  - component: {fileID: 1881859916}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -944,22 +956,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1881859916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881859915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01086592a81001440afd7804137d2ce4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dotPrefab: {fileID: 0}
-  numberOfDots: 5
-  spawnArea: {x: 4, y: 4}
-  sceneToLoad: 
 --- !u!212 &1881859917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1024,7 +1020,7 @@ Transform:
   m_GameObject: {fileID: 1881859915}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0.01, z: -1.2}
+  m_LocalPosition: {x: 0, y: 0.01, z: -1.2}
   m_LocalScale: {x: 7.8131413, y: 1.3097764, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
